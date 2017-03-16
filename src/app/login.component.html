@@ -1,0 +1,47 @@
+
+<div class="row text-center">
+
+    <div id="login_id">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-9 login_form text-center">
+            <h3><i>Welcome to Bookreads</i></h3>
+            <form *ngIf="show_Login" [formGroup]="loginForm"  class = "form-horizontal" >
+               
+                <input formControlName="email" type="email" placeholder="Your email">
+                <input formControlName="password" type="password" placeholder="Your password"><br>
+                  <button class="btn btn-primary login" (click)="doLogin($event)">Login</button>
+                   <button class="btn btn-primary login" (click)="showSignupForm($event)">Sign Up</button>
+            </form>
+            
+
+            <form *ngIf="show_Signup" [formGroup]="loginForm"  class = "form-horizontal" >
+               
+                <input formControlName="signup_email" type="email" placeholder="Enter your email ID">
+                <input formControlName="signup_password" type="password" placeholder="Enter a  password"><br>
+                <input formControlName="signup_confirm_password" type="password" placeholder="Confirm your password"><br>
+                <button class="btn btn-primary login" (click)="showLoginForm($event)">Login</button>
+                 <button class="btn btn-primary login" (click)="doSignup($event)">Sign Up</button>
+              
+               
+            </form>
+             
+            
+
+                
+        </div>
+
+        <!--<form id="form_login">
+        <p>
+            <input type="text" id="username" placeholder="Email ID" />
+        </p>
+        <p>
+            <input type="password" id="password" placeholder="Password" />
+        </p>
+        
+        <p>
+            <button class="btn-primary"id="submitbutton" type="button">Login</button>
+        </p>
+    </form>
+    
+    -->
+    </div>
+</div>

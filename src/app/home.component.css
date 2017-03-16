@@ -1,0 +1,27 @@
+img{
+    height:400px;
+    max-width: 100%; 
+    width: 100%;
+}
+carousel{
+    margin-top:200px !important;
+}
+.quote_tile img{
+    background-color: #FFEBEE;
+    height:200px;   
+   margin-top:5%; 
+    border-radius:2px;
+    border:3px solid grey;
+   /* margin-bottom:30%;--*/
+    
+    
+    
+}
+.quote{
+  color:blue;
+}
+.author_name{
+  color:grey;
+  font-size:18px;
+}
+

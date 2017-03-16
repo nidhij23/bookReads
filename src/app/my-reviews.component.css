@@ -1,0 +1,9 @@
+.review_tile{
+    background-color:#F0F8FF;
+    margin-bottom: 2%;
+    padding: 5px;
+    border-radius:5px;
+}
+p{
+    color: firebrick
+}

@@ -1,0 +1,22 @@
+.nav_buttons{
+    border:0px;
+    background-color: transparent;
+    color:white;
+}
+
+.nav_buttons:active{
+    outline:none;
+}
+nav{
+    background-color: #e40046; 
+}
+img{
+    height:50px;
+    margin-top:-15px;
+}
+.search_button{
+    background-color: #2F2D2D;
+    border-radius:1px;
+    border:0px;
+    color:white;
+}

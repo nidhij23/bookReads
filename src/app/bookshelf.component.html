@@ -1,0 +1,84 @@
+<div class="container mt50 mb100">
+  <div class="row my_books_tile">
+    <img src="assets/images/bookshelfcover.jpg">
+  </div>
+  
+
+
+  <!-- Cube 
+<div id="interests" class="container cube_container text-center"> 
+ <div class="col-lg-12">
+   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+     <div class="stage" style="width: 120px; height: 120px;">
+<div class="cubespinner">
+<div class="face1"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face2"><i class="fa fa-3x fa-code" aria-hidden="true"></i></div>
+<div class="face3"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face4">Cheta BHagat</div>
+<div class="face5"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face6"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+</div>
+</div>
+   </div> 
+   <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
+     <div class="stage" style="width: 120px; height: 120px;">
+<div class="cubespinner">
+<div class="face1"></div>
+<div class="face2"><i class="fa fa-3x fa-puzzle-piece" aria-hidden="true"></i></div>
+<div class="face3"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face4">donald</div>
+<div class="face5"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face6"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+</div>
+</div>
+</div> 
+   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+     <div class="stage" style="width: 120px; height: 120px;">
+<div class="cubespinner">
+<div class="face1"></div>
+<div class="face2"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face3"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face4">Oswald</div>
+<div class="face5"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face6"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+</div>
+</div>    </div> 
+   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+     <div class="stage" style="width: 120px; height: 120px;">
+<div class="cubespinner">
+<div class="face1"> Paulo Coehlo</div>
+<div class="face2"><i class="fa fa-3x fa-paint-brush" aria-hidden="true"></i></div>
+<div class="face3"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face4">The Alchemist</div>
+<div class="face5"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+<div class="face6"><i class="fa fa-3x fa-cubes" aria-hidden="true"></i></div>
+</div>
+</div>       </div> 
+ </div>  
+</div>
+
+<!-- Cube -->
+
+
+  <hr>
+
+
+
+
+  <div class="tile_cover">
+    <div class="col-lg-12 text-center">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" *ngFor="let book of data ">
+        <div class="tile">
+          <a routerLink='/aboutus'><img class="img-thumbnail" src="assets/images/{{book.img}}"></a>
+          <h6>{{book.name}}</h6>
+          <h6>{{book.author |uppercase}}</h6>
+          <rating [(ngModel)]="book.rate" [max]="max" [readonly]="isReadonly"></rating><br>
+          <button class="btn btn-success">Add to Read List</button>
+          <a href="{{book.link}}" target="_blank">Buy</a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

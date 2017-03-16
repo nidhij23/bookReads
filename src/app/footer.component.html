@@ -1,0 +1,43 @@
+<div class="row ">
+    <div class="text-center navbar navbar-inverse navbar-fixed-bottom footer">
+        
+        <h6>&copy; 2017, BookReads.com, Inc. or its affiliates</h6>
+        <h6>Sopra Steria India Pvt. Ltd. <a type="button"  (click)="staticModal.show()">Send Feeback </a> </h6>
+    </div>
+
+
+</div>
+
+<!--Modal-->
+
+
+
+
+ 
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Share your Feedback</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="email">Feedback</label>
+    <input type="text" rowspan="25" class="form-control" id="feedback_box">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit Feedback</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>

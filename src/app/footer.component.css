@@ -1,0 +1,11 @@
+.footer{
+    height:100px;
+    background-color: #212020;
+    color:grey;
+    padding-top:1%;    
+}
+
+#feedback_box{
+    height:100px;
+     width:100%;
+}
